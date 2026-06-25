@@ -1,0 +1,417 @@
+<!--
+SMARTCAM AI
+
+Copyright (c) 2026
+Divyansh Tiwari
+
+All Rights Reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SMARTCAM AI</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="bg-grid"></div>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<!-- ========================= -->
+<!-- Loading Screen -->
+<!-- ========================= -->
+
+<div id="loading-screen">
+
+    <div class="loader-logo">
+
+        SMARTCAM AI
+
+    </div>
+
+    <div class="loader-text">
+
+        Initializing Vision Engine...
+
+    </div>
+
+    <div class="loader-bar">
+
+        <div class="loader-progress"></div>
+
+    </div>
+
+    <div id="intro">
+
+        <p>
+
+            A Vision Intelligence Project
+
+        </p>
+
+        <h2>
+
+            BY
+
+        </h2>
+
+        <h1>
+
+            DIVYANSH TIWARI
+
+        </h1>
+
+    </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- MAIN APP -->
+<!-- ========================= -->
+
+<div id="app">
+
+<header>
+
+<div class="logo">
+
+<h1>
+
+SMARTCAM AI
+
+</h1>
+
+<p>
+
+Vision Intelligence Platform
+
+</p>
+
+</div>
+
+<div class="header-right">
+
+<div class="status">
+
+<span class="live-dot"></span>
+
+ONLINE
+
+</div>
+
+<div id="clock">
+
+00:00
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ========================= -->
+<!-- Dashboard -->
+<!-- ========================= -->
+
+<section class="dashboard">
+
+<!-- LEFT PANEL -->
+
+<div class="left-panel glass">
+
+<h2>
+
+SYSTEM
+
+</h2>
+
+<div class="info">
+
+<div>
+
+<span>FPS</span>
+
+<b id="fps">
+
+--
+
+</b>
+
+</div>
+
+<div>
+
+<span>Faces</span>
+
+<b id="faces">
+
+--
+
+</b>
+
+</div>
+
+<div>
+
+<span>Tracking</span>
+
+<b>
+
+ACTIVE
+
+</b>
+
+</div>
+
+<div>
+
+<span>Camera</span>
+
+<b>
+
+CONNECTED
+
+</b>
+
+</div>
+
+<div>
+
+<span>Emotion AI</span>
+
+<b>
+
+READY
+
+</b>
+
+</div>
+
+<div>
+
+<span>MediaPipe</span>
+
+<b>
+
+LOADED
+
+</b>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CAMERA -->
+
+<div class="camera-panel">
+
+<div class="camera-frame">
+
+<div class="corner tl"></div>
+<div class="corner tr"></div>
+<div class="corner bl"></div>
+<div class="corner br"></div>
+
+<div class="scan-line"></div>
+
+<img src="/video">
+
+</div>
+
+</div>
+
+<!-- RIGHT PANEL -->
+
+<div class="right-panel glass">
+
+<h2>
+
+AI ANALYSIS
+
+</h2>
+
+<div class="info">
+
+<div>
+
+<span>Status</span>
+
+<b>
+
+ONLINE
+
+</b>
+
+</div>
+
+<div>
+
+<span>Face ID</span>
+
+<b>
+
+TRACKING
+
+</b>
+
+</div>
+
+<div>
+
+<span>Emotion</span>
+
+<b>
+
+LIVE
+
+</b>
+
+</div>
+
+<div>
+
+<span>Eye Direction</span>
+
+<b>
+
+LIVE
+
+</b>
+
+</div>
+
+<div>
+
+<span>Confidence</span>
+
+<b>
+
+98%
+
+</b>
+
+</div>
+
+<div>
+
+<span>Latency</span>
+
+<b>
+
+16 ms
+
+</b>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Bottom -->
+<!-- ========================= -->
+
+<section class="bottom">
+
+<div class="glass">
+
+<h2>
+
+SYSTEM STATUS
+
+</h2>
+
+<ul>
+
+<li>✔ Camera Connected</li>
+
+<li>✔ Flask Server Running</li>
+
+<li>✔ MediaPipe Loaded</li>
+
+<li>✔ DeepFace Loaded</li>
+
+<li>✔ AI Vision Active</li>
+
+</ul>
+
+</div>
+
+<div class="glass">
+
+<h2>
+
+ABOUT SMARTCAM
+
+</h2>
+
+<p>
+
+SMARTCAM AI is an advanced real-time computer vision platform
+built using Flask, OpenCV, MediaPipe and DeepFace.
+
+It provides live facial tracking,
+emotion analysis,
+AI-powered monitoring
+and a futuristic dashboard experience.
+
+Designed and Developed by
+
+<b>
+
+DIVYANSH TIWARI
+
+</b>
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+Powered by
+
+OpenCV •
+
+MediaPipe •
+
+DeepFace •
+
+Flask
+
+<br><br>
+
+SMARTCAM AI © 2026
+
+</footer>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
